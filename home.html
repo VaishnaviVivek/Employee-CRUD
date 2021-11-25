@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Quinnox Cosultancy - J2EE CRUD</title>
+<link rel="stylesheet" href="style/home.css">
+<style>
+a:link, a:visited {
+	background-color: lightblue;
+	color: black;
+	border: 2px solid green;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:hover, a:active {
+	background-color: green;
+	color: white;
+}
+</style>
+<script>
+	function myFunction1()
+	{
+		var url_string=window.location.href;
+		var url=new URL(url_string);
+		var e=url.searchParams.get("uname");
+		document.getElementById("user").innerHTML="Welcome "+e;
+	}
+</script>
+</head>
+<body bgcolor="greenyellow" onload="myFunction1()">
+	<div align="center">
+
+		<h1>Quinnox Consultancy</h1>
+		<IMG SRC="images/quinnox.jfif" width="25%" height="50%">
+		<div align="right" id="user" style="font-weight:bold;"></div>
+		<h2>Employee Management System</h2>
+		<hr >
+		<a href="addUser.jsp"> Add Employee</a> <br>
+		<br> <a href="ViewServlet"> View Employees</a> <br>
+		<br>
+	</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Management System</title>
+<link rel="stylesheet" href="style/index.css">
+
+<style>
+	body{
+	background-image:url("images/bgimage.png");
+	text-align:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+</style>
+<script>
+	function myFunction()
+	{
+	var url_string=window.location.href;
+	var url=new URL(url_string);
+	var e=url.searchParams.get("var");
+	document.getElementById("errorMassage").innerHTML=e;
+	
+	}
+</script>
+</head>
+<body onload="myFunction()">
+	<img src="images/ems.png" width="30%" height="50%">
+
+	<h2>Employee Login Page</h2>
+	<br>
+	<div class="login">
+		<form id="login" method="get" action="loginProcess.jsp">
+			<label><b>User Email</b> </label> <input type="text" name="email"
+				id="email" placeholder="Email"> <br>
+			<br> <label><b>Password </b> </label> <input type="Password"
+				name="Pass" id="Pass" placeholder="Password"> <br>
+			<br> <input type="submit" name="log" id="log"
+				value="Log In Here"> <br>
+			<br> <input type="checkbox" id="check"> <span>Remember
+				me</span> <br>
+			<br> <a href="#">Forgot Password</a> <br><br>
+			<span id="errorMassage" style="color:red;"></span>
+			
+		</form>
+	</div>
+</body>
+</html>
