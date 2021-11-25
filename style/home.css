@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+h1{
+	color: blue;
+	border: 2px solid brown;
+	padding: 10px;
+	border-radius: 50px 20px;
+}
+
+h2{
+	color:red;
+}
+
+a{
+	background-color: aqua;
+	color: black;
+	border: 2px solid green;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:hover, a:active {
+	background-color: green;
+	color: white;
+}
